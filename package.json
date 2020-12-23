@@ -8,7 +8,7 @@
     "build": "graph build",
     "create-local": "graph create crypto-com/swap-subgraph --node http://127.0.0.1:8020",
     "deploy-local": "graph deploy crypto-com/swap-subgraph --debug --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
-    "deploy-canary": "graph deploy pingnamo/swap-subgraph-canary --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
+    "deploy-canary": "graph deploy crypto-yang/defi-swap-subgraph --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug",
     "deploy": "graph deploy crypto-com/swap-subgraph --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --debug"
   },
   "devDependencies": {

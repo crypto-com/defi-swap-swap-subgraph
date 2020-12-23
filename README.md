@@ -1,10 +1,16 @@
 # Defi Swap - Swap subgraph
 
-A fork of Uniswap subgraph and used in defi-swap info page.
+Uniswap Fork, subgraph for https://crypto.com/defi/swap
 
-## Original Explorer
+## Mainnet Canary Subgraph
+
+Deployment happens on pull request
+
+https://thegraph.com/explorer/subgraph/crypto-yang/defi-swap-subgraph
+
+## Mainnet Production Subgraph
+
+Deployment happens on merge to master branch
 
 https://thegraph.com/explorer/subgraph/crypto-com/swap-subgraph
 
-## Source 
-https://github.com/crypto-com/the-subgraphs/tree/master/swap-subgraph
