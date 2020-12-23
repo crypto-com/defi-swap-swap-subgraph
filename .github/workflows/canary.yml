@@ -23,9 +23,6 @@ jobs:
     - name: Build
       run: |
         yarn codegen
-    - name: Setup Auth
-      run: |
-        ./node_modules/.bin/graph auth https://api.thegraph.com/deploy/ ${{ secrets.YANG_STAGING_TOKEN }}
     - name: Deploy Canary
       run: |
-        yarn deploy-canary
+        yarn deploy-canary -- --access-token ${{ secrets.YANG_STAGING_TOKEN }}
