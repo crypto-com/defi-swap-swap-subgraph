@@ -1,7 +1,9 @@
-name: Canary Deployment
+name: Production Deployment
 
 on:
-  pull_request: 
+  push:
+    branches:
+      - master 
 
 jobs:
   build:
@@ -23,6 +25,6 @@ jobs:
     - name: Build
       run: |
         yarn codegen
-    - name: Deploy Canary
+    - name: Deploy
       run: |
-        yarn deploy-canary -- --access-token ${{ secrets.YANG_STAGING_TOKEN }}
+        yarn deploy -- --access-token ${{ secrets.PRODUCTION_TOKEN }}
